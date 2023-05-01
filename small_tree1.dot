@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label="City_Population <= 0.2\nsquared_error = 0.2\nsamples = 286\nvalue = 0.8"] ;
+1 [label="Undergrad_NO <= 0.5\nsquared_error = 0.1\nsamples = 57\nvalue = 0.9"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="City_Population <= 0.0\nsquared_error = 0.1\nsamples = 24\nvalue = 0.8"] ;
+1 -> 2 ;
+3 [label="squared_error = 0.0\nsamples = 2\nvalue = 0.0"] ;
+2 -> 3 ;
+4 [label="squared_error = 0.1\nsamples = 22\nvalue = 0.9"] ;
+2 -> 4 ;
+5 [label="City_Population <= 0.2\nsquared_error = 0.0\nsamples = 33\nvalue = 1.0"] ;
+1 -> 5 ;
+6 [label="squared_error = 0.0\nsamples = 25\nvalue = 1.0"] ;
+5 -> 6 ;
+7 [label="squared_error = 0.1\nsamples = 8\nvalue = 0.9"] ;
+5 -> 7 ;
+8 [label="City_Population <= 0.2\nsquared_error = 0.2\nsamples = 229\nvalue = 0.8"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="Marital_Status_Married <= 0.5\nsquared_error = 0.2\nsamples = 7\nvalue = 0.4"] ;
+8 -> 9 ;
+10 [label="squared_error = 0.2\nsamples = 4\nvalue = 0.7"] ;
+9 -> 10 ;
+11 [label="squared_error = 0.0\nsamples = 3\nvalue = 0.0"] ;
+9 -> 11 ;
+12 [label="Work_Experience <= 1.0\nsquared_error = 0.2\nsamples = 222\nvalue = 0.8"] ;
+8 -> 12 ;
+13 [label="squared_error = 0.2\nsamples = 213\nvalue = 0.8"] ;
+12 -> 13 ;
+14 [label="squared_error = 0.2\nsamples = 9\nvalue = 0.5"] ;
+12 -> 14 ;
+}
